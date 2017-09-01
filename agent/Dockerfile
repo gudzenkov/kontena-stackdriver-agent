@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:17.04
 
 WORKDIR /app
-COPY entrypoint.sh .
+COPY app ./
 
-ENTRYPOINT /app/entrypoint.sh
+ENTRYPOINT "/app/entrypoint.sh"
