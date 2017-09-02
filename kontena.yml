@@ -3,7 +3,6 @@ version: 0.0.1
 
 services:
   agent:
-    build: agent
     image: mattipaksula/kontena-stackdriver-agent
     deploy:
       strategy: daemon

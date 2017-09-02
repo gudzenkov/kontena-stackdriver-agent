@@ -1,0 +1,6 @@
+version: '2.1'
+
+services:
+  agent:
+    build: agent
+    image: mattipaksula/kontena-stackdriver-agent

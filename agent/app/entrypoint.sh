@@ -1,9 +1,6 @@
 #!/usr/bin/env sh
 set -e
 
-apt-get update
-apt-get install -y curl sudo lsb-release
-
 curl -O https://repo.stackdriver.com/stack-install.sh
 sudo bash stack-install.sh --write-gcm
 
