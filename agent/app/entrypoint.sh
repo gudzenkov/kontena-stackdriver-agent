@@ -7,6 +7,8 @@ sudo bash stack-install.sh --write-gcm
 curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
 sudo bash install-logging-agent.sh
 
-while true; do
-  sleep 2073600
-done
+echo "stackdriver agent running."
+
+trap 'exit 0' TERM
+sleep inf &
+wait $!
