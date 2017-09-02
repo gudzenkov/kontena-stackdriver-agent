@@ -1,4 +1,4 @@
-stack: matti/stackdriver
+stack: gcp-stackdriver
 version: 0.0.1
 
 services:
